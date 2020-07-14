@@ -84,7 +84,7 @@ body {
   outline: none;
 }
 
-.form__radio-wrap {
+.form__checkbox-wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -96,8 +96,8 @@ body {
   margin-top: 5px;
 }
 
-.form__input-radio {
-  display: none;
+.form__input-checkbox {
+  display: none !important;
 }
 
 .form__input-label {
@@ -111,6 +111,10 @@ body {
   cursor: pointer;
   position: relative;
   padding-left: 30px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .form__input-submit {
@@ -159,7 +163,7 @@ body {
   margin-bottom: 6px;
 }
 
-input[type=radio]:checked + label:before {
+input[type=checkbox]:checked + label:before {
   content: url(../images/checkbox.svg);
   text-align: center;
   line-height: 10px;
@@ -411,7 +415,7 @@ input[type=radio]:checked + label:before {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
   }
-  input[type=radio]:checked + label:before {
+  input[type=checkbox]:checked + label:before {
     content: url(../images/checkbox-min.svg);
     line-height: 11px;
   }

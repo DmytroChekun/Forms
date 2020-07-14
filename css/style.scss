@@ -75,8 +75,8 @@ body{
         outline: none;
     }
 
-    // .form__radio-wrap
-    &__radio-wrap {
+    // .form__checkbox-wrap
+    &__checkbox-wrap {
         display: flex;
         height: 30px;
         align-items: center;
@@ -84,10 +84,10 @@ body{
         margin-top: 5px;
     }
 
-    // .form__input-radio
+    // .form__input-checkbox
 
-    &__input-radio {
-        display: none;
+    &__input-checkbox {
+        display: none !important;
     }
 
     // .form__input-label
@@ -103,6 +103,7 @@ body{
         cursor: pointer;
         position: relative;
         padding-left: 30px;
+        user-select: none;
     }
 
 
@@ -149,7 +150,7 @@ body{
     padding: 2px;
     margin-bottom: 6px;
   }
-  input[type=radio]:checked + label:before {
+  input[type=checkbox]:checked + label:before {
     content: url(../images/checkbox.svg);
     text-align: center;
     line-height: 10px;
@@ -347,7 +348,7 @@ body{
         align-items: center;
         box-sizing: border-box;
       }
-      input[type=radio]:checked + label:before {
+      input[type=checkbox]:checked + label:before {
         content: url(../images/checkbox-min.svg);
         line-height: 11px;
       }
